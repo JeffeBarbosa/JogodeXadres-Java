@@ -1,4 +1,4 @@
-package xadres;
+package xadrez;
 
 public enum Cor {
 

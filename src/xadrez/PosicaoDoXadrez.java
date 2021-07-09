@@ -1,15 +1,15 @@
-package xadres;
+package xadrez;
 
 import jogoDeTabuleiro.Posicao;
 
-public class PosicaoDoXadres {
+public class PosicaoDoXadrez {
 
 		private char coluna;
 		private int linha;
 		
-		public PosicaoDoXadres(char coluna, int linha) {
+		public PosicaoDoXadrez(char coluna, int linha) {
 			if(coluna < 'a' || coluna > 'h' || linha < 1 || linha > 8) {
-				throw new XadresException("Erro instanciando Posição no Xadres. Valores validos são de a1 ate h8.");
+				throw new XadrezException("Erro instanciando Posição no Xadres. Valores validos são de a1 ate h8.");
 			}
 			this.coluna = coluna;
 			this.linha = linha;
@@ -27,8 +27,8 @@ public class PosicaoDoXadres {
 			return new Posicao(8-linha,coluna-'a');
 		}
 		
-		protected static PosicaoDoXadres dePosicao(Posicao posicao) {
-			return new PosicaoDoXadres((char)('a' - posicao.getColuna()),8- posicao.getLinha());
+		protected static PosicaoDoXadrez dePosicao(Posicao posicao) {
+			return new PosicaoDoXadrez((char)('a' - posicao.getColuna()),8- posicao.getLinha());
 		}
 		
 		@Override

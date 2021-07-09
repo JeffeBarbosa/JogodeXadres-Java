@@ -1,10 +1,10 @@
-package pecas.xadres;
+package pecas.xadrez;
 
 import jogoDeTabuleiro.Tabuleiro;
-import xadres.Cor;
-import xadres.PecaDeXadres;
+import xadrez.Cor;
+import xadrez.PecaDeXadrez;
 
-public class Rei extends PecaDeXadres{
+public class Rei extends PecaDeXadrez{
 
 	public Rei(Tabuleiro tabuleiro, Cor cor) {
 		super(tabuleiro, cor);
